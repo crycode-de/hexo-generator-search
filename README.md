@@ -39,6 +39,7 @@ search:
   * `false` - generated results only cover title and other meta info without mainbody.
 - **template** (Optional) - path to a custom XML template
 - **strip_html** (Optional) - when `true` all HTML tags will be removed from the content.
+- **permalinks** (Optional) - when `true` the tags and categories in json output will also contain the permalinks.
 
 ## Exclude indexing
 
