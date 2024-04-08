@@ -35,6 +35,7 @@ search:
 - **content** - whether contains the whole content of each article.
   * `true` (Default) - generated results use the mainbody.
   * `rendered` - generated results use the rendered mainbody if available. (json only)
+  * `excerpt` - generated results use the excerpts as content if available.
   * `raw` - generated results use the raw mainbody if available. (json only, also contains the front-matter)
   * `false` - generated results only cover title and other meta info without mainbody.
 - **template** (Optional) - path to a custom XML template
