@@ -29,11 +29,16 @@ search:
 
 - **path** - file path. By default is `search.xml` . If the file extension is `.json`, the output format will be JSON. Otherwise XML format file will be exported.
 - **field** - the search scope you want to search, you can chose:
-  * **post** (Default) - will only covers all the posts of your blog.
-  * **page** - will only covers all the pages of your blog.
-  * **all** - will covers all the posts and pages of your blog.
-- **content** - whether contains the whole content of each article. If `false`, the generated results only cover title and other meta info without mainbody. By default is `true`.
+  * `post` (Default) - will only covers all the posts of your blog.
+  * `page` - will only covers all the pages of your blog.
+  * `all` - will covers all the posts and pages of your blog.
+- **content** - whether contains the whole content of each article.
+  * `true` (Default) - generated results use the mainbody.
+  * `rendered` - generated results use the rendered mainbody if available. (json only)
+  * `raw` - generated results use the raw mainbody if available. (json only, also contains the front-matter)
+  * `false` - generated results only cover title and other meta info without mainbody.
 - **template** (Optional) - path to a custom XML template
+- **strip_html** (Optional) - when `true` all HTML tags will be removed from the content.
 
 ## Exclude indexing
 
