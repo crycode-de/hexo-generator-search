@@ -38,6 +38,7 @@ search:
   * `excerpt` - generated results use the excerpts as content if available.
   * `raw` - generated results use the raw mainbody if available. (json only, also contains the front-matter)
   * `false` - generated results only cover title and other meta info without mainbody.
+- **lang** (Optional) - when `true` the language of the post will be included in the output. This is useful for multilingual blogs. Defaults to the first language of the Hexo site, which is set in the root `_config.yml` file. (json only)
 - **ignore_regex** (Optional) - a regular expression to ignore certain files from being indexed. For example, you can use `'^.+\.(js|css)$'` to ignore all JavaScript and CSS files within the source folder. (json only)
 - **template** (Optional) - path to a custom XML template
 - **strip_html** (Optional) - when `true` all HTML tags will be removed from the content.
